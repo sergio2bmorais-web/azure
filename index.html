@@ -3,31 +3,264 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Academia Cloud Azure - Formação Avançada</title>
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Junta de Freguesia de Vilar de Andorinho</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @page {
+            size: A4;
+            margin: 15mm 12mm;
+            background-color: #ffffff;
+        }
+        body {
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            color: #1e293b;
+            margin: 0;
+            padding: 0;
+            line-height: 1.5;
+        }
+        .dropdown:hover .dropdown-menu {
+            display: block;
+        }
+        .dropdown-menu {
+            display: none;
+            position: absolute;
+            z-index: 50;
+        }
+    </style>
 </head>
-<body class="bg-slate-50 text-slate-800 font-sans">
+<body class="bg-slate-50">
 
-    <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md shadow-sm">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
-            <div class="flex items-center gap-2">
-                <i class="fa-brands fa-microsoft text-sky-500 text-2xl"></i>
-                <span class="font-bold text-xl tracking-tight text-slate-900">Azure<span class="text-sky-600">Academy</span></span>
+    <!-- TOP BAR -->
+    <div class="bg-blue-900 text-white text-xs py-2 px-6 flex justify-between items-center border-b border-blue-800">
+        <div>📍 Concelho de Vila Nova de Gaia</div>
+        <div class="space-x-4">
+            <span>📞 227 860 300</span>
+            <span>✉️ geral@jf-vilardeandorinho.pt</span>
+        </div>
+    </div>
+
+    <!-- HEADER / NAVIGATION -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <!-- LOGO / HERALDICA PLACEHOLDER -->
+            <div class="flex items-center space-x-3">
+                <div class="w-12 h-12 bg-blue-100 border border-blue-300 rounded-full flex items-center justify-center text-blue-900 font-bold text-xl">
+                    V&A
+                </div>
+                <div>
+                    <h1 class="text-lg font-bold text-blue-900 leading-tight">Vilar de Andorinho</h1>
+                    <p class="text-xs text-slate-500 uppercase tracking-wider font-semibold">Junta de Freguesia</p>
+                </div>
             </div>
-            <nav class="hidden md:flex items-center gap-8 font-medium text-sm text-slate-600">
-                <a href="#cursos" class="hover:text-sky-600 transition">Cursos</a>
-                <a href="#certificacoes" class="hover:text-sky-600 transition">Certificações</a>
-                <a href="#vantagens" class="hover:text-sky-600 transition">Vantagens</a>
-                <a href="#contacto" class="hover:text-sky-600 transition">Contacto</a>
+
+            <!-- NAV MENU BASED ON THE IMAGE AND SPECIFICATIONS -->
+            <nav class="flex space-x-1 font-medium text-slate-700">
+                <!-- Freguesia Dropdown -->
+                <div class="relative dropdown px-3 py-2 hover:text-blue-700 transition">
+                    <button class="flex items-center space-x-1 focus:outline-none">
+                        <span>Freguesia</span>
+                        <svg class="w-4 h-4 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                    <ul class="dropdown-menu bg-white text-slate-800 border border-slate-100 rounded-lg shadow-xl mt-2 py-2 w-56 left-0">
+                        <li><a href="#" class="block px-4 py-2 hover:bg-blue-50 hover:text-blue-700">Executivo</a></li>
+                        <li><a href="#" class="block px-4 py-2 hover:bg-blue-50 hover:text-blue-700">Assembleia</a></li>
+                        <li><a href="#" class="block px-4 py-2 hover:bg-blue-50 hover:text-blue-700">História</a></li>
+                        <li><a href="#" class="block px-4 py-2 hover:bg-blue-50 hover:text-blue-700">Logomarca</a></li>
+                        <li><a href="#" class="block px-4 py-2 hover:bg-blue-50 hover:text-blue-700">Heráldica</a></li>
+                    </ul>
+                </div>
+
+                <!-- Notícias -->
+                <a href="#" class="px-3 py-2 hover:text-blue-700 transition flex items-center">Notícias</a>
+
+                <!-- Serviços Dropdown -->
+                <div class="relative dropdown px-3 py-2 hover:text-blue-700 transition">
+                    <button class="flex items-center space-x-1 focus:outline-none">
+                        <span>Serviços</span>
+                        <svg class="w-4 h-4 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                    <ul class="dropdown-menu bg-white text-slate-800 border border-slate-100 rounded-lg shadow-xl mt-2 py-2 w-64 left-0">
+                        <li><a href="#" class="block px-4 py-2 hover:bg-blue-50 hover:text-blue-700">Secretaria</a></li>
+                        <li><a href="#" class="block px-4 py-2 hover:bg-blue-50 hover:text-blue-700">Posto CTT</a></li>
+                        <li><a href="#" class="block px-4 py-2 hover:bg-blue-50 hover:text-blue-700">Gabinete de Inserção Profissional</a></li>
+                        <li><a href="#" class="block px-4 py-2 hover:bg-blue-50 hover:text-blue-700">Gabinete de Psicologia</a></li>
+                        <li><a href="#" class="block px-4 py-2 hover:bg-blue-50 hover:text-blue-700">Gabinete de Acção Social</a></li>
+                        <li><a href="#" class="block px-4 py-2 hover:bg-blue-50 hover:text-blue-700">Espaço Cidadão</a></li>
+                        <li><a href="#" class="block px-4 py-2 hover:bg-blue-50 hover:text-blue-700">Formulário de Contato</a></li>
+                    </ul>
+                </div>
+
+                <!-- Secretaria Digital -->
+                <div class="relative dropdown px-3 py-2 hover:text-blue-700 transition">
+                    <button class="flex items-center space-x-1 focus:outline-none">
+                        <span>Secretaria Digital</span>
+                        <svg class="w-4 h-4 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                    <ul class="dropdown-menu bg-white text-slate-800 border border-slate-100 rounded-lg shadow-xl mt-2 py-2 w-48 left-0">
+                        <li><a href="#" class="block px-4 py-2 hover:bg-blue-50 hover:text-blue-700">Requerimentos Online</a></li>
+                        <li><a href="#" class="block px-4 py-2 hover:bg-blue-50 hover:text-blue-700">Balcão Virtual</a></li>
+                    </ul>
+                </div>
+
+                <!-- Projetos -->
+                <div class="relative dropdown px-3 py-2 hover:text-blue-700 transition">
+                    <button class="flex items-center space-x-1 focus:outline-none">
+                        <span>Projetos</span>
+                        <svg class="w-4 h-4 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                    <ul class="dropdown-menu bg-white text-slate-800 border border-slate-100 rounded-lg shadow-xl mt-2 py-2 w-48 left-0">
+                        <li><a href="#" class="block px-4 py-2 hover:bg-blue-50 hover:text-blue-700">Em Curso</a></li>
+                        <li><a href="#" class="block px-4 py-2 hover:bg-blue-50 hover:text-blue-700">Plano Plurianual</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contactos -->
+                <div class="relative dropdown px-3 py-2 hover:text-blue-700 transition">
+                    <button class="flex items-center space-x-1 focus:outline-none">
+                        <span>Contactos</span>
+                        <svg class="w-4 h-4 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                    <ul class="dropdown-menu bg-white text-slate-800 border border-slate-100 rounded-lg shadow-xl mt-2 py-2 w-48 left-0">
+                        <li><a href="#" class="block px-4 py-2 hover:bg-blue-50 hover:text-blue-700">Localização</a></li>
+                        <li><a href="#" class="block px-4 py-2 hover:bg-blue-50 hover:text-blue-700">Telefones e Emails</a></li>
+                    </ul>
+                </div>
             </nav>
-            <div class="flex items-center gap-4">
-                <a href="#" class="hidden sm:inline-block text-sm font-medium text-slate-600 hover:text-sky-600">Entrar</a>
-                <a href="#cursos" class="bg-sky-600 hover:bg-sky-700 text-white text-sm font-semibold px-4 py-2 rounded-lg transition shadow-sm shadow-sky-200">Começar Já</a>
-            </div>
         </div>
     </header>
 
-    <section class="relative overflow-hidden bg-gradient-to-b from-sky-50 via-white to-white py-20 lg:py-32">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-12 items-center">
-            <div class="space-y-6
+    <!-- HERO SECTION / IMAGENS INSTITUCIONAIS -->
+    <section class="relative bg-gradient-to-r block bg-blue-900 text-white overflow-hidden">
+        <!-- SVG Abstract Background Pattern replacing dynamic image for reliable local render -->
+        <div class="absolute inset-0 opacity-20">
+            <svg class="w-full h-full" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 100 100" preserveAspectRatio="none">
+                <polygon fill="currentColor" points="0,100 100,0 100,100"/>
+                <polygon fill="currentColor" points="0,0 30,0 80,100 0,100" opacity="0.5"/>
+            </svg>
+        </div>
+        <div class="relative max-w-7xl mx-auto px-6 py-24 md:py-32 z-10">
+            <span class="bg-blue-500 text-xs font-bold uppercase px-3 py-1 rounded-full text-white inline-block mb-4">Bem-vindo</span>
+            <h2 class="text-4xl md:text-5xl font-extrabold max-w-2xl leading-tight">Servir a Comunidade de Vilar de Andorinho</h2>
+            <p class="mt-4 text-lg text-blue-100 max-w-xl">Proximidade, transparência e inovação ao serviço de todos os fregueses.</p>
+            <div class="mt-8 space-x-4">
+                <a href="#servicos" class="bg-white text-blue-900 hover:bg-slate-100 px-6 py-3 rounded-lg font-semibold shadow-md transition inline-block">Ver Serviços</a>
+                <a href="#contacto" class="bg-transparent border-2 border-white/80 text-white hover:bg-white/10 px-6 py-3 rounded-lg font-semibold transition inline-block">Contactar Junta</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- QUICK LINKS SECTION -->
+    <section id="servicos" class="max-w-7xl mx-auto px-6 -mt-10 relative z-20">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="bg-white p-6 rounded-xl shadow-lg border-t-4 border-blue-600">
+                <div class="text-blue-600 text-3xl mb-3">🏢</div>
+                <h3 class="text-xl font-bold mb-2">Secretaria Online</h3>
+                <p class="text-slate-600 text-sm mb-4">Trate de atestados, certidões e requerimentos sem sair de casa de forma rápida.</p>
+                <a href="#" class="text-blue-600 font-semibold text-sm hover:underline">Aceder ao Balcão &rarr;</a>
+            </div>
+            <div class="bg-white p-6 rounded-xl shadow-lg border-t-4 border-emerald-500">
+                <div class="text-emerald-500 text-3xl mb-3">📬</div>
+                <h3 class="text-xl font-bold mb-2">Posto CTT</h3>
+                <p class="text-slate-600 text-sm mb-4">Consulte os horários de funcionamento e serviços disponíveis no nosso posto de correios local.</p>
+                <a href="#" class="text-emerald-600 font-semibold text-sm hover:underline">Saber mais &rarr;</a>
+            </div>
+            <div class="bg-white p-6 rounded-xl shadow-lg border-t-4 border-amber-500">
+                <div class="text-amber-500 text-3xl mb-3">🤝</div>
+                <h3 class="text-xl font-bold mb-2">Ação Social & Emprego</h3>
+                <p class="text-slate-600 text-sm mb-4">Gabinete de Inserção Profissional e Apoio Psicológico para ajudar os nossos cidadãos.</p>
+                <a href="#" class="text-amber-600 font-semibold text-sm hover:underline">Marcar Atendimento &rarr;</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTENT / MAIN SECTION -->
+    <main class="max-w-7xl mx-auto px-6 py-16 grid grid-cols-1 lg:grid-cols-3 gap-12">
+        <!-- News / Left Column -->
+        <div class="lg:col-span-2 space-y-8">
+            <h2 class="text-2xl font-bold text-slate-800 border-b pb-2 flex items-center space-x-2">
+                <span>📰 Últimas Notícias</span>
+            </h2>
+            
+            <div class="space-y-6">
+                <article class="bg-white p-6 rounded-lg shadow-sm border border-slate-100 flex flex-col md:flex-row gap-6">
+                    <div class="w-full md:w-48 h-32 bg-slate-200 rounded-md flex-shrink-0 flex items-center justify-center text-slate-400 text-sm font-semibold">Imagem da Notícia</div>
+                    <div>
+                        <span class="text-xs text-blue-600 font-semibold uppercase">Comunidade</span>
+                        <h3 class="text-lg font-bold text-slate-900 mt-1 hover:text-blue-700 cursor-pointer">Obras de Requalificação do Espaço Público no Centro da Freguesia</h3>
+                        <p class="text-slate-600 text-sm mt-2">Iniciaram-se esta semana as intervenções planeadas para a melhoria dos passeios e acessos pedonais...</p>
+                        <span class="text-xs text-slate-400 block mt-4">22 de Junho de 2026</span>
+                    </div>
+                </article>
+
+                <article class="bg-white p-6 rounded-lg shadow-sm border border-slate-100 flex flex-col md:flex-row gap-6">
+                    <div class="w-full md:w-48 h-32 bg-slate-200 rounded-md flex-shrink-0 flex items-center justify-center text-slate-400 text-sm font-semibold">Imagem da Notícia</div>
+                    <div>
+                        <span class="text-xs text-blue-600 font-semibold uppercase">Ação Social</span>
+                        <h3 class="text-lg font-bold text-slate-900 mt-1 hover:text-blue-700 cursor-pointer">Abertura de Inscrições para o Programa de Apoio Jovem e Emprego</h3>
+                        <p class="text-slate-600 text-sm mt-2">O Gabinete de Inserção Profissional (GIP) lança novas sessões de mentoria e apoio à integração...</p>
+                        <span class="text-xs text-slate-400 block mt-4">18 de Junho de 2026</span>
+                    </div>
+                </article>
+            </div>
+        </div>
+
+        <!-- Sidebar / Right Column (Formulário de Contacto) -->
+        <div id="contacto" class="bg-white p-8 rounded-xl shadow-md border border-slate-100 h-fit">
+            <h3 class="text-xl font-bold text-slate-800 mb-2">Formulário de Contacto</h3>
+            <p class="text-xs text-slate-500 mb-6">Envie as suas dúvidas, sugestões ou reclamações diretamente para os serviços administrativos.</p>
+            
+            <form class="space-y-4" onsubmit="event.preventDefault();">
+                <div>
+                    <label class="block text-xs font-semibold uppercase tracking-wider text-slate-600 mb-1">Nome Completo</label>
+                    <input type="text" class="w-full bg-slate-50 border border-slate-200 rounded-lg p-2.5 text-sm focus:outline-none focus:border-blue-500" placeholder="Ex: Maria Silva">
+                </div>
+                <div>
+                    <label class="block text-xs font-semibold uppercase tracking-wider text-slate-600 mb-1">E-mail</label>
+                    <input type="email" class="w-full bg-slate-50 border border-slate-200 rounded-lg p-2.5 text-sm focus:outline-none focus:border-blue-500" placeholder="Ex: maria@email.com">
+                </div>
+                <div>
+                    <label class="block text-xs font-semibold uppercase tracking-wider text-slate-600 mb-1">Assunto</label>
+                    <select class="w-full bg-slate-50 border border-slate-200 rounded-lg p-2.5 text-sm focus:outline-none focus:border-blue-500">
+                        <option>Secretaria / Atestados</option>
+                        <option>Gabinete de Ação Social</option>
+                        <option>Gabinete de Inserção Profissional</option>
+                        <option>Outro assunto</option>
+                    </select>
+                </div>
+                <div>
+                    <label class="block text-xs font-semibold uppercase tracking-wider text-slate-600 mb-1">Mensagem</label>
+                    <textarea rows="4" class="w-full bg-slate-50 border border-slate-200 rounded-lg p-2.5 text-sm focus:outline-none focus:border-blue-500" placeholder="Escreva aqui a sua mensagem..."></textarea>
+                </div>
+                <button type="submit" class="w-full bg-blue-900 text-white font-bold p-3 rounded-lg text-sm hover:bg-blue-800 shadow transition">Enviar Mensagem</button>
+            </form>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-slate-900 text-slate-400 text-sm py-12 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div>
+                <h4 class="text-white font-bold mb-4">Junta de Freguesia de Vilar de Andorinho</h4>
+                <p class="text-xs leading-relaxed">Rua de S. Lourenço, nº 124<br>4430-543 Vilar de Andorinho</p>
+                <p class="text-xs mt-2">Telefone: 227 860 300</p>
+            </div>
+            <div>
+                <h4 class="text-white font-bold mb-4">Links Úteis</h4>
+                <ul class="space-y-2 text-xs">
+                    <li><a href="#" class="hover:text-white transition">Câmara Municipal de Gaia</a></li>
+                    <li><a href="#" class="hover:text-white transition">Portal das Comunidades</a></li>
+                    <li><a href="#" class="hover:text-white transition">Balcão Único Prédio (BUPi)</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-white font-bold mb-4">Azure & Cloud Architecture</h4>
+                <p class="text-xs leading-relaxed">Este portal foi desenhado estruturalmente para ser alojado em arquiteturas de alta disponibilidade na **Azure App Services**, com base de dados **Azure SQL** e CDN para entrega estática acelerada.</p>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto px-6 mt-8 pt-8 border-t border-slate-800 text-center text-xs">
+            &copy; 2026 Junta de Freguesia de Vilar de Andorinho. Todos os direitos reservados. Construído com Tailwind CSS.
+        </div>
+    </footer>
+
+</body>
+</html>
